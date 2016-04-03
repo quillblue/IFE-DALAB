@@ -70,32 +70,35 @@ a{
 a:hover{
 	color: #000;
 }
-/*
-#btnImg2:hover ~ #imgContainer{animation: ma2 2s ease-out};
-#btnImg2:hover ~ #imgContainer{animation: ma2 2s ease-out};
-#btnImg3:hover ~ #imgContainer{animation: ma3 2s ease-out};
 
-@keyframes ma2 {0%{margin-left:-100%;} 100%{margin-left:0;} }  
-@keyframes ma2 {0%{margin-left:-100%;} 100%{margin-left:-100%;}}  
-@keyframes ma3 {0%{margin-left:-100%;} 100%{margin-left:-200%;}}  
-*/
-
-.imgContainer{
+#imgContainer{
 	position: absolute;
 	width: 900px;
 }
 
+#imgContainer img{
+	float: left;
+}
+
+#btnImg1:target~#imgContainer{animation:none;left: 0;}
+#btnImg2:target~#imgContainer{animation:none;left: -100%;}
+#btnImg3:target~#imgContainer{animation:none;left: -200%;}
+
+@keyframes maone{
+	0%{left:-300%;}
+	100%{left:0%;}
+}
+
+
 .play{  
-    animation: ma 6s ease-out infinite;  
+    animation: ma 8s ease-out infinite;  
 }
 
 	@keyframes ma {
-        0%,20% {margin-left: 0;}  
-        25%,45% {margin-left: -100%;}  
-        50%,70% {margin-left: -200%;}
-        75%,100% {margin-left: 0;}   
+        0%,29% {left: 0;}  
+        33%,62% {left: -100%;}  
+        66%,95% {left: -200%;}
+        99%,100% {left: 0;}   
     }
 
-	.imgContainer img{
-		float: left;
-	}
+	
