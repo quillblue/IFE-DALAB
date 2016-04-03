@@ -1,0 +1,63 @@
+body{
+	padding: 20px;
+	font-family: "微软雅黑"
+}
+
+/* to disable Chrome user agent stylesheet on p label */
+p{
+	-webkit-margin-before: 0;
+}
+
+img{
+	width: 80px;
+	height: 80px;
+}
+
+.container{
+	background-color: #eee;
+	border: 1px solid #999;
+	padding: 20px;
+}
+
+	.container:after{
+		content:"";
+		display: table;
+		clear:both;
+	}
+
+.col{
+	background-color: #fff;
+	padding: 20px;
+}
+
+.colLeft{
+	width:160px;
+	float: left;
+}
+
+.colRight{
+	width: 80px;
+	float: right;
+}
+
+.colCenter{
+	margin: 0 140px 0 220px;
+}
+
+.teamLogo{
+	float: left;
+	width: 80px;
+}
+
+.teamName{
+	margin-left: 100px;
+}
+
+.memberLogo{
+	width: 80px;
+	padding-bottom: 20px;
+}
+	
+	.memberLogo:last-child{
+		padding-bottom: 0;
+	}

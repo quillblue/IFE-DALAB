@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="jlan">
+	<title>Task 04</title>
+	<style type="text/css">
+		body,div {
+			margin:0;
+			padding:0;
+		}
+		.wrap {
+			position: absolute;
+			width: 400px;
+			height: 200px;
+			left: 50%;
+			top: 50%;
+			margin-left: -200px;
+			margin-top: -100px;
+			background-color: #ccc;
+		    overflow: hidden;
+		}
+		.corner {
+		    position: absolute;
+			border-radius: 50px;
+			border: 50px solid #fc0;
+		}
+		.top-corner {
+			left: -50px;
+			top: -50px;
+		}
+	    .bottom-corner {
+			left: 350px;
+			top: 150px;
+		}
+	</style>
+</head>
+<body>
+    <div class="wrap">
+    	<div class="corner top-corner"></div>
+    	<div class="corner bottom-corner"></div>
+    </div>
+</body>
+</html>
