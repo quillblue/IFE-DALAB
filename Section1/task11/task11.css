@@ -25,10 +25,14 @@ header{
 	line-height: 250%;
 }
 
-	header span{
-		position: absolute;
-		left: 2%;
-	}
+header span{
+	position: absolute;
+	left: 2%;
+}
+
+header h1{
+	font-size: 1.2em;
+}
 
 
 nav{
@@ -59,60 +63,59 @@ nav a{
 	margin: 2%;
 }
 
-	.tagNav{
-		width: 20%;
-		text-align: center;
-		padding: 2% 0;
-	}
+.tagNav{
+	width: 20%;
+	text-align: center;
+	padding: 2% 0;
+}
 
-	.tagNav img{
-		width: 60%;
-	}
+.tagNav img{
+	width: 60%;
+}
 
-	.tagNav p{
-		padding-top: 0.5em;
-		font-size: 1.2em;
-	}
+.tagNav p{
+	padding-top: 0.5em;
+	font-size: 1.2em;
+}
 
 
 .subColumnNav{
 	display: flex;
 }
 
-	.subColumn{
-		margin: 2% 0;
-		border-right: 2px solid #f5f5f5;
-		width: 33.33%;
-		text-align: center;
-	}
-		.subColumn:last-child{
-			border-right: none;
-		}
-
-	.subColumnImgContainer{
-		height: 20%;
-		display: flex;
-  		flex-flow: column;
-  		justify-content:space-around;
-		align-items: center;
+.subColumn{
+	margin: 2% 0;
+	border-right: 2px solid #f5f5f5;
+	width: 33.33%;
+	text-align: center;
+}
+	.subColumn:last-child{
+		border-right: none;
 	}
 
-	.subColumn img{
-		width: 50%;
-	}
+.subColumnImgContainer{
+	height: 100px;
+	display: flex;
+	flex-flow: column;
+	justify-content:space-around;
+	align-items: center;
+}
 
-	.subColumn h1{
-		font-size: 1.4em;
-	}
+.subColumn img{
+	width: 50%;
+}
+
+.subColumn h2{
+	font-size: 1.4em;
+}
 
 section{
 	position: relative;
 	border-top: 1em solid #f5f5f5;
 	padding: 0 2%;
-
 }
 
-section h1{
+section h2{
 	margin-top: 0.5em;
 	line-height: 120%;
 }
@@ -120,6 +123,7 @@ section h1{
 section small{
 	color: #ccc;
 }
+
 .sectionContent{
 	display: flex;
   	flex-flow: row wrap;
@@ -131,10 +135,10 @@ section small{
 	width: 33%;
 }
 
-	.sectionImgContainer img{
-		width: 100%;
-		padding: 0.2em 0;
-	}
+.sectionImgContainer img{
+	width: 100%;
+	padding: 0.2em 0;
+}
 
 .sectionSpanContainer{
 	width:66%;
@@ -171,6 +175,7 @@ section small{
 .article img{
 	width: 25%;
 	height: 25%;
+	min-height: 90px;
 }
 
 .articleSummary{
@@ -178,24 +183,24 @@ section small{
 	position: relative;
 }
 	
-	.articleSummary h1{
-		font-size: 22px;
-		margin-top: 0;
-	}
+.articleSummary h2{
+	font-size: 22px;
+	margin-top: 0;
+}
 
-	.articleSummary small{
-		position: absolute;
-		bottom: 0px;
-		line-height: 100%;
-	}
+.articleSummary small{
+	position: absolute;
+	bottom: 0px;
+	line-height: 100%;
+}
 
 .multiImgArticle{
 	padding: 0 2%;
 }
 
-	.multiImgArticle h1{
-		padding-bottom: 0.2em;
-	}
+.multiImgArticle h2{
+	padding-bottom: 0.2em;
+}
 
 .multiImgContainer{
 	display: flex;
@@ -204,14 +209,11 @@ section small{
 	align-items:flex-start;
 }
 	
-	.multiImgContainer img{
-		width: 33%;
-	}
+.multiImgContainer img{
+	width: 33%;
+}
 
 footer{
 	height: 2em;
 	background-color: #f5f5f5;
 }
-
-
-
