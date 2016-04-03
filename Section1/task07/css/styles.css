@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -12,10 +13,12 @@ header,
   min-width: 1200px;
   width: 100%;
 }
+
 input,
 button {
   border: 0;
 }
+
 button {
   cursor: pointer;
 }
@@ -26,6 +29,7 @@ button {
   display: block;
   clear: both;
 }
+
 a,
 a:link,
 a:visited,
@@ -34,47 +38,58 @@ a:active {
   color: #333;
   text-decoration: none
 }
+
 ul,
 li {
   list-style: none;
 }
+
 header ul li {
   float: left;
 }
+
 header {
   height: 57px;
 }
+
 h1.logo:before {
   content: url(../img/header-logo.png);
   vertical-align: middle;
   display: inline-block;
   margin-right: 5px;
 }
+
 h1.logo {
   font-size: 21px;
   margin-left: 57px;
   float: left;
   padding-top: 12px;
 }
+
 ul.nav {
   float: right;
   font-size: 15px;
   margin-right: 45px;
 }
+
 .nav li a {
   color: #787b83;
 }
+
 header ul li {
   padding: 18px;
 }
+
 header ul li.active {
   border-bottom: 2px solid #E74F4D;
 }
+
 header ul li.active a,
 header ul li a:hover,
 header ul li:last-child a {
   color: #E74F4D;
 }
+
 header ul li:last-child:before {
   content: url(../img/header-user.png);
   vertical-align: middle;
@@ -82,27 +97,35 @@ header ul li:last-child:before {
   margin-left: -15px;
   margin-right: 5px;
 }
+
 section.banner {
   height: 690px;
   background: url(../img/slogan-bg.png) no-repeat;
   background-size: cover;
 }
+
 .banner .tonl {
   margin-left: 120px;
   color: #fff;
 }
-.banner .tonl h1 {
+
+.banner .tonl h2 {
   padding-top: 240px;
   font-size: 4rem;
   font-weight: 300;
   margin-bottom: 20px;
 }
-.banner .tonl h2 {
+
+.banner .tonl h3 {
   padding-left: 10px;
-  margin-bottom: 10px;
   font-size: 1.25rem;
   font-weight: normal;
 }
+
+.banner tonl .h3-last{
+    margin-bottom: 10px;
+}
+
 .tonl .starttrip {
   display: block;
   margin: 40px 0 0 10px;
@@ -114,19 +137,23 @@ section.banner {
   color: #fff;
   font-size: 2rem;
 }
+
 section.keypoints {
   margin: 40px 0 50px 0;
   height: 160px;
   overflow: hidden;
 }
+
 section.keypoints ul li {
   float: left;
   width: 25%;
 }
+
 .point img {
   display: block;
   margin: 0 auto 40px;
 }
+
 .point p {
   margin: 0 auto;
   width: 50%;
@@ -137,28 +164,34 @@ section.keypoints ul li {
   border-right: 2px solid #aba6a5;
   padding: 0 25%;
 }
+
 .point:last-child p {
   border: 0;
 }
+
 section.doubt {
   height: 360px;
   background: #EDEDED;
 }
+
 .doubt img {
   display: block;
   padding-top: 88px;
   margin: 0 auto 50px;
 }
+
 .doubt p {
   font-size: 3.5rem;
   text-align: center;
   color: #A2A2A2;
 }
+
 section.search {
   height: 340px;
   background: url(../img/search-bg.jpg) no-repeat;
   background-size: cover;
 }
+
 .search h2 {
   font-size: 1.25rem;
   padding-top: 50px;
@@ -166,6 +199,7 @@ section.search {
   color: #fff;
   font-weight: 200;
 }
+
 .search h2:after {
   display: block;
   content: '';
@@ -174,18 +208,21 @@ section.search {
   margin: 10px auto;
   background-color: #fff;
 }
+
 .search p {
   margin-top: 20px;
   font-size: .75rem;
   text-align: center;
   color: #fff;
 }
-.search form {
+
+.search .form {
   width: 90%;
   margin: 50px auto 0;
   text-align: center;
 }
-.search form select,
+
+.search .form select,
 .searchbutton {
   height: 35px;
   width: 235px;
@@ -193,7 +230,8 @@ section.search {
   border: 0;
   border-radius: 0;
 }
-.search form select {
+
+.search .form select {
   border: solid 1px #fff;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -202,13 +240,18 @@ section.search {
   padding-left: 15px;
   color: #aba6a5;
 }
-.search form select option {
+
+
+.search .form select option {
   text-indent: 10px;
 }
-.search form select option:hover {
-  background-color: red;
+
+.search .form select option:hover,
+.search .form select option:checked {
+  background-color: #bf4f49;
   color: #fff;
 }
+
 .searchbutton {
   background-color: #bf4f49;
   color: #fff;
@@ -218,22 +261,26 @@ section.search {
   padding-left: 25px;
   cursor: pointer;
 }
+
 section.activities {
   height: 500px;
   padding-top: 100px;
   background-color: #F7F7F7;
 }
+
 section.activities .items {
   width: 75%;
   margin: 0 auto;
   text-align: center;
 }
+
 section.activities .item {
   float: left;
   width: 24%;
   padding: 0 30px;
   box-sizing: border-box;
 }
+
 .item img {
   background-color: #fff;
   padding: 10px;
@@ -241,11 +288,13 @@ section.activities .item {
   width: 100%;
   box-sizing: border-box;
 }
+
 .item h3 {
   margin-top: 10px;
   font-size: 15px;
   width: 100%;
 }
+
 .item h3.shanghai {
   font-size: 25px;
   font-weight: 200;
@@ -255,23 +304,26 @@ section.activities .item {
   max-width: 170px;
   margin: 0 auto;
 }
+
 .item p {
   color: #A2A2A2;
   font-size: 13px;
   margin: 10px 0;
 }
+
 .slide .time {
   width: 66%;
   float: left;
   position: relative;
 }
+
 .slide img {
   width: 100%;
   height: 567px;
 }
+
 .slideitem,
 .colum-inner {
-
   position: absolute;
   top: 0;
   left: 0;
@@ -281,36 +333,41 @@ section.activities .item {
   overflow: hidden;
   text-align: center;
 }
+
 .slideitem {
   width: 400px;
   height: 350px;
   color: #fff;
 }
-.slideitem h1 {
 
+.slideitem h2 {
   font-size: 50px;
   font-weight: 200;
 }
-.slideitem h1.big-time {
+
+.slideitem h3.big-time {
   font-size: 10rem;
   margin-top: -40px;
 }
+
 .slideitem p {
   font-size: 20px;
   margin-top: 10px;
 }
+
 .slideitemdesc {
   float: right;
   width: 34%;
   padding-top: 150px;
   text-align: center;
 }
+
 .slideitemdesc h2 {
   display: inline;
   text-align: center;
   font-size: 22px;
-
 }
+
 .slideitemdesc span {
   position: relative;
   padding-left: 20px;
@@ -318,6 +375,7 @@ section.activities .item {
   font-size: 22px;
   color: #FD323D;
 }
+
 .slideitemdesc span:before {
   display: block;
   content: '';
@@ -330,6 +388,7 @@ section.activities .item {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 .slideitemdesc p {
   width: 70%;
   margin: 20px auto;
@@ -338,6 +397,7 @@ section.activities .item {
   font-size: 13px;
   color: #aba6a5;
 }
+
 .slideitemdesc a {
   display: inline-block;
   font-size: 15px;
@@ -346,6 +406,7 @@ section.activities .item {
   border: 1px solid #FD323D;
   color: #FD323D;
 }
+
 .colum-3 a:hover,
 .slideitemdesc a:hover {
   background-color: #FD323D;
@@ -355,12 +416,14 @@ section.activities .item {
   -o-transition: all .3s;
   transition: all .3s;
 }
+
 .slides,
 .slide,
 .time {
   height: 567px;
   position: relative;
 }
+
 #tabpages {
   position: absolute;
   left: 66%;
@@ -368,6 +431,7 @@ section.activities .item {
   width: 34%;
   text-align: center;
 }
+
 #tabpages li {
   display: inline-block;
   width: 8px;
@@ -378,46 +442,54 @@ section.activities .item {
   border: 1px solid #929292;
   cursor: pointer;
 }
+
 #tabpages .active,
 #tabpages li:hover {
   background-color: #929292;
 }
+
 .newage {
   height: 520px;
 }
+
 .time-img {
   float: right;
   width: 34%;
-
 }
+
 .time-img img {
   height: 520px;
   width: 100%;
 }
+
 .colum-3 {
   width: 33%;
   float: left;
   height: 100%;
 }
+
 .colum-left {
   background-color: #FD323D;
   position: relative;
   color: #fff;
 }
+
 .colum-center {
   background-color: #fff;
   position: relative;
 }
+
 .colum-inner {
   width: 300px;
   height: 200px;
-
 }
+
 .colum-3 p {
   font-size: 20px;
   line-height: 30px;
 }
-.colum-3 p:after {
+
+.colum-3 .last-p::after {
   display: block;
   content: '';
   margin: 25px auto;
@@ -425,9 +497,11 @@ section.activities .item {
   height: 2px;
   background-color: #fff;
 }
+
 .colum-3.colum-center p:after {
   background-color: #ABAAAA;
 }
+
 .colum-3 a {
   display: inline-block;
   font-size: 18px;
@@ -436,10 +510,12 @@ section.activities .item {
   border: 1px solid #FD323D;
   color: #FD323D;
 }
+
 .colum-3.colum-left a {
   color: #FFF;
   border: 1px solid #FFF;
 }
+
 .colum-3.colum-left a:hover {
   background-color: #FFF;
   color: #FD323D;
@@ -448,16 +524,20 @@ section.activities .item {
   -o-transition: all .3s;
   transition: all .3s;
 }
+
 section.joinus {
   height: 750px;
 }
+
 section.joinus .join-desc {
   text-align: center;
 }
-section.joinus .join-desc h1 {
+
+section.joinus .join-desc h2 {
   padding-top: 120px;
 }
-section.joinus .join-desc h1:after {
+
+section.joinus .join-desc h2:after {
   display: block;
   content: '';
   margin: 10px auto;
@@ -465,29 +545,39 @@ section.joinus .join-desc h1:after {
   height: 2px;
   background-color: #FD323D;
 }
+
 section.joinus .join-desc p {
-  margin-bottom: 100px;
   color: #aba6a5;
   font-size: 14px;
 }
+
+section.joinus .join-desc .p-last {
+  margin-bottom: 100px;
+}
+
+
 section.joinus .register {
   width: 80%;
   margin: 0 auto;
 }
+
 .register-info {
   float: left;
   width: 28%;
 }
+
 .register-info li p {
   margin-top: 20px;
   font-size: 13px;
   color: #aba6a5;
 }
+
 .register-info li a {
   float: right;
   color: #aba6a5;
   font-size: 12px;
 }
+
 .register-info li a:before {
   content: url(../img/unfold.png);
   vertical-align: middle;
@@ -495,22 +585,27 @@ section.joinus .register {
   margin-left: -15px;
   margin-right: 5px;
 }
+
 .register-form {
   width: 64%;
   float: right;
 }
+
 .form-list {
   width: 47%;
   float: left;
   margin-bottom: 20px;
 }
+
 .form-list:nth-child(2n) {
   float: right;
 }
+
 input, textarea {
   outline: 0;
   color: #000;
 }
+
 .form-list input {
   border: 0;
   float: left;
@@ -519,9 +614,11 @@ input, textarea {
   background-color: #EDEDEF;
   padding-left: 15px;
 }
+
 .form-list.textarea {
   width: 100%;
 }
+
 .form-list.textarea textarea {
   width: 100%;
   padding-left: 15px;
@@ -530,12 +627,14 @@ input, textarea {
   height: 100px;
   background-color: #EDEDEF;
 }
+
 #sub-btn1 {
   float: left;
   width: 100%;
   padding-left: 15px;
   background-color: #EDEDEF;
 }
+
 .btn-reg {
   width: 100%;
   height: 40px;
@@ -544,31 +643,40 @@ input, textarea {
   background-color: #EDEDEF;
   cursor: pointer;
 }
+
 footer {
   height: 415px;
   background-color: #33353F;
   text-align: center;
   color: #fff;
 }
+
 footer .email {
   height: 345px;
 }
+
 footer .email h2 {
   padding-top: 90px;
   font-weight: 200;
   font-size: 23px;
 }
-footer .email p {
+
+footer .email .p-first {
   padding-top: 10px;
   font-size: 13px;
+}
+footer .email .p-last {
+  font-size: 13px; 
   margin-bottom: 20px;
 }
 footer .send-email {
   width: 510px;
 }
+
 .send-email {
   margin: 0 auto 50px;
 }
+
 .send-email input {
   width: 420px;
   height: 40px;
@@ -576,6 +684,7 @@ footer .send-email {
   padding-left: 15px;
   font-size: 14px;
 }
+
 .send-email button {
   height: 40px;
   width: 70px;
@@ -586,20 +695,24 @@ footer .send-email {
   letter-spacing: 10px;
   background-color: #6f7178;
 }
+
 .email ul li {
   display: inline-block;
   margin-right: 25px;
 }
+
 footer .copyright {
   height: 70px;
   background-color: #2f3038;
   text-align: left;
 }
+
 footer .copyright span {
   margin-left: 100px;
   line-height: 70px;
   font-size: 13px;
 }
+
 footer .copyright a {
   float: right;
   color: #fff;
