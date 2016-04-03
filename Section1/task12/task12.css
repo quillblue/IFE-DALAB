@@ -1,0 +1,104 @@
+body{
+	margin:0 auto;
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+	line-height: 150%;
+	font-family: "Helvetica Neue", Helvetica, STHeiTi,"黑体", sans-serif;
+}
+
+.row{
+	margin: 40px;
+}
+
+table{
+	border: 1px solid #fff;
+}
+
+thead{
+	background-color: #000;
+	color: #fff;
+}
+
+tbody tr:nth-child(-n+3){
+	color: #f00;
+}
+
+tr:nth-child(even){
+	background-color: #eee;
+}
+
+input{
+	width: 100px;
+	transition:width 1s;
+	-moz-transition:width 1s; 
+	-webkit-transition:width 1s;
+}
+
+input:focus{
+	width: 200px;
+}
+
+.imgFrame{
+	position: relative;
+	background-color: #ff0;
+	height: 150px;
+	width: 300px;
+	overflow: hidden;
+}
+
+
+
+a{
+	background-color: rgba(255,255,255,0.5);
+	position:absolute;
+	right: 0;
+	bottom: 0;
+	height: 20px;
+	width: 20px;
+	margin: 1px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	z-index: 2;
+}
+
+	#btnImg1{
+		right: 44px;
+	}
+
+	#btnImg2{
+		right: 22px;
+	}
+
+	a:hover{
+		color: #000;
+	}
+
+	#btnImg1:hover ~ .imgContainer{animation: ma1 2s ease-out};
+	#btnImg2:hover ~ .imgContainer{animation: ma2 2s ease-out};
+	#btnImg3:hover ~ .imgContainer{animation: ma3 2s ease-out};
+	@keyframes ma1 {0%{margin-left:-300%} 100%{margin-left:0;} }  
+    @keyframes ma2 {0%{margin-left:-300%} 100%{margin-left:-100%;}}  
+    @keyframes ma3 {0%{margin-left:-300%} 100%{margin-left:-200%;}}  
+
+
+.imgContainer{
+	position: absolute;
+	width: 900px;
+	
+}
+
+.play{  
+    animation: ma 6s ease-out infinite;  
+}
+
+	@keyframes ma {
+        0%,20% {margin-left: 0;}  
+        25%,45% {margin-left: -100%;}  
+        50%,70% {margin-left: -200%;}
+        75%,100% {margin-left: 0;}   
+    }
+
+	.imgContainer img{
+		float: left;
+	}

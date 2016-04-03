@@ -1,0 +1,45 @@
+body{
+	display: flex;
+  	flex-flow: row wrap;
+  	margin: 20px 20px;
+  	justify-content:space-between;
+}
+
+div{
+	border: 1px solid #f00;
+	width: 150px;
+	
+}
+
+#box-1{
+	height:120px;
+}
+
+#box-2{
+	height: 100px;
+}
+
+#box-3{
+	height: 40px;
+}
+
+#box-4{
+	border-color:#00f;
+	height: 200px;
+}
+
+@media(min-width:640px){
+	body{
+		align-items: center;
+	}
+}
+
+@media(max-width:640px){
+	body{
+		align-items: start;
+	}
+
+	#box-4{
+		order:-1;
+	}
+}
