@@ -25,6 +25,11 @@ nav{
     height: 50px;
 }
 
+nav img{
+    margin-left: 20px;
+    height: 50px;
+}
+
 nav ul{
     float: right;
     /* 以下仅用于覆盖Chrome默认样式表*/
@@ -70,6 +75,11 @@ article p{
 
 article li{
     list-style: none;
+}
+
+article img{
+    width: 300px;
+    height: 200px;
 }
 
 .smallPictures{

@@ -40,13 +40,10 @@ input:focus{
 
 .imgFrame{
 	position: relative;
-	background-color: #ff0;
 	height: 150px;
 	width: 300px;
 	overflow: hidden;
 }
-
-
 
 a{
 	background-color: rgba(255,255,255,0.5);
@@ -62,30 +59,30 @@ a{
 	z-index: 2;
 }
 
-	#btnImg1{
-		right: 44px;
-	}
+#btnImg1{
+	right: 44px;
+}
 
-	#btnImg2{
-		right: 22px;
-	}
+#btnImg2{
+	right: 22px;
+}
 
-	a:hover{
-		color: #000;
-	}
+a:hover{
+	color: #000;
+}
+/*
+#btnImg2:hover ~ #imgContainer{animation: ma2 2s ease-out};
+#btnImg2:hover ~ #imgContainer{animation: ma2 2s ease-out};
+#btnImg3:hover ~ #imgContainer{animation: ma3 2s ease-out};
 
-	#btnImg1:hover ~ .imgContainer{animation: ma1 2s ease-out};
-	#btnImg2:hover ~ .imgContainer{animation: ma2 2s ease-out};
-	#btnImg3:hover ~ .imgContainer{animation: ma3 2s ease-out};
-	@keyframes ma1 {0%{margin-left:-300%} 100%{margin-left:0;} }  
-    @keyframes ma2 {0%{margin-left:-300%} 100%{margin-left:-100%;}}  
-    @keyframes ma3 {0%{margin-left:-300%} 100%{margin-left:-200%;}}  
-
+@keyframes ma2 {0%{margin-left:-100%;} 100%{margin-left:0;} }  
+@keyframes ma2 {0%{margin-left:-100%;} 100%{margin-left:-100%;}}  
+@keyframes ma3 {0%{margin-left:-100%;} 100%{margin-left:-200%;}}  
+*/
 
 .imgContainer{
 	position: absolute;
 	width: 900px;
-	
 }
 
 .play{  
