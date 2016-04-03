@@ -101,7 +101,7 @@ body{
 	font-family: "楷体";
 	font-style: italic;
 	color: #676767;
-
+}
 
 .bigNumber{
 	line-height: 100%;
@@ -109,12 +109,12 @@ body{
 	font-size: 116px;
 	color:#75b86b;
 	font-style: italic;
-
+}
 
 #numberAndNote{
 	color:#cc8091;
 	padding: 10px;
-
+}
 
 .mediumNumber{
 	font-size:55px;
@@ -124,6 +124,10 @@ body{
 .note{
 	float: left;
 	margin-left: 5px;
+}
+
+.note span{
+	display: block;
 }
 
 .noteNumber{
@@ -380,6 +384,7 @@ body{
 }
 
 .quoteTagWord i{
+	display: block;
 	font-size: 21px;
 	line-height: 24px;
 }
