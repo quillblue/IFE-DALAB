@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="quillblue">
+    <title>Task 14</title>
+  </head>
+  <body>
+    <h3>污染城市列表</h3>
+    <ul id="aqi-list"></ul>
+    <script type="text/javascript">
+    var aqiData = [
+      ["北京", 90],
+      ["上海", 50],
+      ["福州", 10],
+      ["广州", 50],
+      ["成都", 90],
+      ["西安", 100]
+    ];
+    (function () {
+      var poluateCityList=aqiData.filter(function(city){return city[1]>60}).sort(function(city1,city2){return city1[1]<city2[1]})
+      var aqiList=document.getElementById('aqi-list')
+      for(var i=0;i<poluateCityList.length;i++){
+        var node=document.createElement('li')
+        node.innerText='第'+(i+1)+'名：'+poluateCityList[i][0]+'，'+poluateCityList[i][1]
+        aqiList.appendChild(node)
+      }
+    })();
+    </script>
+  </body>
+</html>
