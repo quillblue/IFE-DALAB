@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="author" content="hxin">
+    <title>Task 31</title>
+</head>
+<body>
+    <div>
+        <form id = "input_form">
+            在校生：
+            <input type="radio" checked="checked" name="Student" value="In_school" />
+            非在校生：
+            <input type="radio" name="Student" value="Out_school" />
+            <div id = "school_name">
+                <span>学校</span>
+                <select id = "select_options">
+                    <option value="0">北京</option>
+                    <option value="1">上海</option>
+                </select>
+                <select name = "de_options" id = "option0" style="display:inline-block" >
+                    <option value="0">清华大学</option>
+                    <option value="1">北京大学</option>
+                </select>
+                <select name = "de_options" id = "option1" style="display:none">
+                    <option value="0">上海交通大学</option>
+                    <option value="1">复旦大学</option>
+                </select>
+            </div>
+            <div id = "company_name">
+                <span>就业单位</span>
+                <input style="width:60px" />
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="task31.js"></script>
+</body>
+</html>

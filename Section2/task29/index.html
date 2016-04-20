@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="author" content="hxin">
+    <title>Task 29</title>
+    <style>
+        .content{
+            margin-top:10%;
+        }
+
+        .block{
+            margin:3%;
+        }
+
+        .hint{
+            display: inline-block;
+            color: gray;
+        }
+
+        .con_block_left{
+            display: inline-block;
+            width:10%;
+            text-align: right;
+            margin-right:5px;
+        }
+
+        .con_block_right{
+            display:inline;
+            text-align: left;
+            margin-right:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "content">
+        <form onsubmit="return validate(this)">
+            <div class = "block">
+                <div>
+                    <div class="con_block_left">
+                        <span class="title">名称</span>
+                    </div>
+                    <div class="con_block_right">
+                        <input id = "input_value" />
+                        <input type = "submit" value="验证" />
+                    </div>
+                </div>
+                <div>
+                    <div class="con_block_left"></div>
+
+                    <div class="con_block_right">
+                        <div id = "input_hint" class = "hint">必填，长度为4-16个字符</div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    $ = function( sel ){ return document.querySelector(sel) }
+    var input_value = $("#input_value");
+    var input_hint = $("#input_hint");
+
+    function CountLength( str )
+    {
+        var rst = 0;
+        for( var i in str ){
+            if( str.charCodeAt( i ) >= 0 && str.charCodeAt( i ) <= 128 ){
+                rst += 1;
+            }
+            else{
+                rst += 2;
+            }
+
+        }
+        return rst;
+    }
+
+    function validate()
+    {
+        var value_length = CountLength( input_value.value );
+        if( input_value.value == null || value_length == 0 ){
+            input_hint.innerHTML = "姓名不能为空";
+            input_value.style.borderColor = "red";
+            input_hint.style.color = "red";
+            return false;
+        }
+        else if( value_length < 4 || value_length > 16 ){
+            input_hint.innerHTML = "字符数应为4-16";
+            input_value.style.borderColor = "red";
+            input_hint.style.color = "red";
+            return false;
+        }
+        else{
+            input_hint.innerHTML = "名称格式正确";
+            input_hint.style.color = "green";
+            input_value.style.borderColor = "green";
+            return false;
+        }
+    }
+</script>
+</html>

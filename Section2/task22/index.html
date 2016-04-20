@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="quillblue">
+	<title>Task 22</title>
+	<style type="text/css">
+		.node{
+			display: flex;
+			justify-content:space-around;
+			flex:1;
+			min-height: 20px;
+			border:1px solid #000;
+			padding: 5px;
+			margin:5px;
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div id="control-panel">
+		<button id="preorder">前序遍历</button>
+		<button id="middleorder">中序遍历</button>
+		<button id="postorder">后序遍历</button>
+		<span>蓝色-当前访问节点 黄色-已访问节点</span>
+	</div>
+	<div id="root" class="node">
+		<div class="node">
+			<div class="node">
+				<div class="node"></div>
+				<div class="node"></div>
+			</div>
+			<div class="node">
+				<div class="node"></div>
+				<div class="node"></div>
+			</div>
+		</div>
+		<div class="node">
+			<div class="node">
+				<div class="node"></div>
+				<div class="node"></div>
+			</div>
+			<div class="node">
+				<div class="node"></div>
+				<div class="node"></div>
+			</div class="node">
+		</div>
+	</div>
+	<script type="text/javascript" src="task22.js"></script>
+</body>
+</html>

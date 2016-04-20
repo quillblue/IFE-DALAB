@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Task 30</title>
+    <meta name="author" content="hxin">
+    <style>
+        .content{
+            margin-top:20px;
+        }
+
+        .block{
+            margin:20px;
+        }
+
+        .hint{
+            display: inline-block;
+            color: gray;
+        }
+
+        .con_block_left{
+            display: inline-block;
+            width:10%;
+            text-align: right;
+            margin-right:5px;
+        }
+
+        .con_block_right{
+            display:inline;
+            text-align: left;
+            margin-right:5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class = "content">
+    <form>
+        <input type="button" value = "提交" onclick = "CheckAll()" />
+        <div class = "block">
+            <div>
+                <div class="con_block_left">
+                    <span class="title">姓名</span>
+                </div>
+                <div class="con_block_right">
+                    <input id = "input_name" index = "0" />
+
+                </div>
+            </div>
+
+            <div>
+                <div class="con_block_left"></div>
+                <div class="con_block_right">
+                    <div id = "name_hint" class = "hint"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "block">
+            <div>
+                <div class="con_block_left">
+                    <span class="title">密码</span>
+                </div>
+                <div class="con_block_right">
+                    <input id = "input_pass" type = "password" index = "1" />
+                </div>
+            </div>
+            <div>
+                <div class="con_block_left"></div>
+                <div class="con_block_right">
+                    <div id = "pass_hint" class = "hint"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class = "block">
+            <div>
+                <div class="con_block_left">
+                    <span class="title">重复密码</span>
+                </div>
+                <div class="con_block_right">
+                    <input type = "password" id = "input_passagain" index = "2" />
+                </div>
+            </div>
+
+            <div>
+                <div class="con_block_left"></div>
+                <div class="con_block_right">
+                    <div id = "passagain_hint" class = "hint"></div>
+                </div>
+            </div>
+        </div>
+        <div class = "block">
+            <div>
+                <div class="con_block_left">
+                    <span class="title">邮箱</span>
+                </div>
+                <div class="con_block_right">
+                    <input id = "input_mailbox" index = "3" />
+                </div>
+            </div>
+            <div>
+                <div class="con_block_left"></div>
+                <div class="con_block_right">
+                    <div id = "mailbox_hint" class = "hint"></div>
+                </div>
+            </div>
+        </div>
+        <div class = "block">
+            <div>
+                <div class="con_block_left">
+                    <span class="title">电话</span>
+                </div>
+                <div class="con_block_right">
+                    <input id = "input_phone" index ="4" />
+                </div>
+            </div>
+            <div>
+                <div class="con_block_left"></div>
+                <div class="con_block_right">
+                    <div id = "phone_hint" class = "hint"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src = "task30.js"></script>
+</body>
+</html>
