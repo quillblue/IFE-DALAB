@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Task 25</title>
+	<style type="text/css">
+		.control-panel{
+			margin: 5px 0;
+		}
+		.node{
+			margin-top: 5px;
+			border-left:1px dashed #ccc;
+		}
+		.selected{
+			background-color: #ff0;
+		}
+		.search-hit{
+			color: #f00;
+			font-weight: bold;
+		}
+		.children{
+			margin-left: 20px;
+		}
+		.icon{
+			width: 20px;
+			text-align: center;
+			display: inline-block;
+			font-size: 20px;
+			font-weight: bold;
+			margin-right: 5px;
+			margin-left: -10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="control-panel">
+		<span>搜索节点（模糊匹配）：</span>
+		<input id="input-search">
+		<button id="btn-search">搜索</button>
+	</div>
+	<div class="control-panel">
+		<span>管理节点：</span>
+		<input id="input-add">
+		<button id="btn-add">添加节点</button>
+		<button id="btn-delete">删除选定节点</button>
+	</div>
+	<div id="tree">
+		<!--<div class="node">
+			<a class="icon">-</a><span>Sub 1</span>
+			<div class="children">
+				<div class="node">
+					<span class="icon">+</span><span> Sub 1-1</span>
+					<div class="children">
+						<div class="node">
+							<span class="icon">+</span><span> Sub 1-1-1</span>
+							<div class="children">
+								
+							</div>
+						</div>
+						<div class="node">
+							<span class="icon">+</span><span> Sub 1-1-2</span>
+							<div class="children">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="node">
+					<span class="icon">+</span><span> Sub 1-2</span>
+					<div class="children">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="node">
+			<span class="icon">+</span><span>Sub 2</span>
+			<div class="children">
+				<div class="node">
+					<span class="icon">+</span><span> Sub 2-1</span>
+					<div class="children">
+						<div class="node">
+							<span class="icon">+</span><span> Sub 2-1-1</span>
+							<div class="children">
+								
+							</div>
+						</div>
+						<div class="node">
+							<span class="icon">+</span><span> Sub 2-1-2</span>
+							<div class="children">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="node">
+					<span class="icon">+</span><span> Sub 2-2</span>
+					<div class="children">
+						
+					</div>
+				</div>
+			</div>
+		</div>-->
+	</div>
+	<script type="text/javascript" src="task25.js"></script>
+</body>
+</html>
