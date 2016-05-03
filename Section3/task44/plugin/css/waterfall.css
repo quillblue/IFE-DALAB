@@ -1,0 +1,44 @@
+.album{
+	position: relative;
+	box-sizing:border-box;
+	overflow: hidden;
+}
+
+	.album:after {
+	    content: '';
+	    display: block;
+	    clear: both;
+	}
+
+.waterfall-album{
+	display: flex;
+}
+
+.waterfall-col{
+	margin:0 8px;
+}
+
+.album-item{
+	position: relative;
+	overflow: hidden;
+	box-sizing:border-box;
+	margin-bottom: 16px;
+}
+
+.album-item img{
+	width:100%;
+}
+
+#shadowMask{
+	position:fixed;
+	width:100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 10;
+	display: none;
+	justify-content: space-around;
+	align-items: center;
+	transition: display 1s;
+}
