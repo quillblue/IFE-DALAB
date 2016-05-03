@@ -4,13 +4,24 @@
 	overflow: hidden;
 }
 
-	.album:after {
+.bucket-row{
+	position: relative;
+	overflow: hidden;
+}
+
+.bucket-item{
+	height: 100%;
+	margin: 0;
+	float: left;
+}
+
+	.bucket-item:after {
 	    content: '';
 	    display: block;
 	    clear: both;
 	}
 
-.album-item img{
+.bucket-item img{
 	height:100%;
 }
 

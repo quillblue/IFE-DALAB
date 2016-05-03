@@ -1,12 +1,13 @@
 function Bucket(selector,imgs,minHeight){
-	this.minHeight=minHeight?minHeight:150
+	if(minHeight){this.minHeight=minHeight}else{this.minHeight=150}
 	this.container=document.querySelector(selector)
 	this.container.classList.add('bucket-album')
 	
 	this.currentSpaceLeft=this.container.clientWidth
 	this.currentRow=document.createElement('div')
 	this.currentRow.classList.add('bucket-row')
-	this.currentRow.style.height=this.minHeight
+	this.currentRow.style.height=this.minHeight+'px'
+	this.container.appendChild(this.currentRow)
 
 	function initShadowMask(){
 		var shadowMask=document.createElement('div')
@@ -30,21 +31,23 @@ Bucket.prototype.insertImage=function(imgList,index){
 		if(pic.width>0||pic.height>0){
 			if(that.currentSpaceLeft-pic.width*that.minHeight/pic.height<0){
 				//This row is full, will wrap it up and set up another
-				that.currentRow.style.height=that.minHeight/(that.container.clientWidth-that.currentSpaceLeft)*that.container.clientWidth
-				that.container.appendChild(that.currentRow)
-				that.currentRow=document.createElement
+				that.currentRow.style.height=that.minHeight/(that.container.clientWidth-that.currentSpaceLeft)*that.container.clientWidth+'px'
+				//for(var i=0;i<that.currentRow.style.length)
+				that.currentRow=document.createElement('div')
 				that.currentRow.classList.add('bucket-row')
+				that.currentRow.style.height=that.minHeight+'px'
+				that.container.appendChild(that.currentRow)
 				that.currentSpaceLeft=that.container.clientWidth
 			}
-			else{
-				//Add the image to this row and recalculate the space left
-				var picContainer=document.createElement('div')
-				picContainer.classList.add('bucket-item')
-				var picDom=document.createElement('img')
-				picDom.src=imgList[index]
-				that.currentRow.appendChild(picDom)
-				that.currentSpaceLeft-=pic.width*that.minHeight/pic.height
-			}
+			//Add the image to this row and recalculate the space left
+			var picContainer=document.createElement('div')
+			picContainer.classList.add('bucket-item')
+			var picDom=document.createElement('img')
+			picDom.src=imgList[index]
+			picContainer.appendChild(picDom)
+			that.currentRow.appendChild(picContainer)
+			that.currentSpaceLeft-=pic.width*that.minHeight/pic.height
+
 			clearInterval(set)
 			index++
 			that.insertImage(imgList,index)
